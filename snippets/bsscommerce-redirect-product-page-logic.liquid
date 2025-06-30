@@ -1,3 +1,11 @@
+{%- comment %}
+    Author: BSS B2B Login
+
+    DO NOT MODIFY. The contents of BSS B2B Login 
+    will overwrite any changes in the next update.
+
+    Updated at: Mon Jun 30 2025
+{% endcomment -%}
 {% assign bss_product_is_hide = false %}
 {% assign bss_hide_product_redirect_page = "/" %}
 {% assign bss_hide_product_redirect_type = 0 %}
@@ -14,5 +22,9 @@
     
 {% endunless %}
 {% if bss_product_is_hide == true or bss_product_is_hide contains "true" %}
-    {{ bss_hide_product_redirect_page }}
+    {% if bss_hide_product_on_gg_search %} 
+        {{ bss_hide_product_redirect_page }}, <meta name="robots" content="noindex">
+    {% else %}
+        {{ bss_hide_product_redirect_page }}
+    {% endif %}
 {% endif %}
