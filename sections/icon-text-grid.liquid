@@ -1,0 +1,292 @@
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+    .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+
+    @media screen and (min-width: 750px) {
+        .parent {
+    grid-template-columns: repeat(4, 1fr);
+    }
+    }
+
+    .parent svg, .parent img {
+    width: 100%;
+    height: auto;
+    }
+    .content--wrap {
+    display: grid;
+    text-align:center;
+        gap: 10px;
+}
+.content--item,.content--item img{background: #fff; border-radius: 10px;}
+.content--item.div_content_1 {
+    /* width: 240.76px; */
+    height: 100%;
+}
+
+.content--wrap.content_wrap2 {
+    /* width: 288.92px; */
+}
+
+.content--wrap.content_wrap3 {
+    /* width: 296.78px; */
+}
+
+.content--wrap.content_wrap4 {
+    /* width: 222px; */
+}
+.content--item.div_content_3_1 img { width: 81px; margin-top: 15.55px; }
+.content--item.div_content_3 img { width: 107px; margin-top: 35.31px; }
+.content--item.div_content_2 img { width: 70px; margin-top: 11.84px; }
+
+@media screen and (min-width: 750px) {
+.content--item.div_content_4 img { width: 222px; }
+}
+
+
+.why_images_on_top_text,.why_images_on_bottom_text{
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 11.79px;
+    line-height: 16.51px;
+    color: #0B0F0E !important;
+    margin:0!important;
+}
+.why_images_on_top_text{margin-top: 8.84px!important;}
+.why_images_on_bottom_text{margin-bottom: 8.84px!important; }
+
+.content--item:hover {
+    box-shadow: 0 12px 20px 6px #606d800a,0 8px 16px 4px #606d800a,0 4px 14px #626f830a;
+}
+
+.content--item:hover img {
+    transform: scale(1.01);
+}
+{%- endstyle -%}
+<div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
+    <div class="page-width page-width-desktop">
+        <div class="collection__title title-wrapper title-wrapper--no-top-margin">
+            {%- if section.settings.title != blank -%}
+              <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"> {{ section.settings.title }} </h2>
+            {%- endif -%}
+          </div>
+    <div class="parent">
+
+
+        {% for block in section.blocks %}
+                <div class="content--wrap content_wrap{{forloop.index}}">
+                    <div class="content--item div_content_{{forloop.index}}"> 
+                        {%- if block.settings.title != blank and block.settings.title_on_top -%}
+                        <h2 class="title inline-richtext why_images_on_top_text {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"> {{ block.settings.title }} </h2>
+                        {%- endif -%}
+                        {%- if block.settings.image != blank -%}
+                            {%- if block.settings.image_behavior == 'ambient' or block.settings.image_behavior == 'zoom-in' -%}
+                            {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
+                            {%- capture sizes -%}
+                                (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
+                                (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
+                            {%- endcapture -%}
+                            {%- else -%}
+                            {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                            {%- capture sizes -%}
+                                (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                                (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                            {%- endcapture -%}
+                            {%- endif -%}
+                            {{ block.settings.image | image_url: width: 1500 | image_tag: sizes: sizes, widths: widths, fetchpriority: 'high' }}
+                     
+                        {%- endif -%}
+                        {%- if block.settings.title != blank and block.settings.title_on_top == false -%}
+                            <h2 class="title inline-richtext why_images_on_bottom_text {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"> {{ block.settings.title }} </h2>
+                        {%- endif -%}
+                    </div>
+                    {%- if block.settings.image1 != blank -%}
+                        <div class="content--item div_content_{{forloop.index}}_1"> 
+                            {%- if block.settings.title1 != blank and block.settings.title_on_top1 -%}
+                            <h2 class="title inline-richtext why_images_on_top_text {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"> {{ block.settings.title1 }} </h2>
+                            {%- endif -%}
+                            {%- if block.settings.image1 != blank -%}
+                                {%- if block.settings.image_behavior == 'ambient' or block.settings.image_behavior == 'zoom-in' -%}
+                                {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
+                                {%- capture sizes -%}
+                                    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
+                                    (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
+                                {%- endcapture -%}
+                                {%- else -%}
+                                {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                                {%- capture sizes -%}
+                                    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                                    (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                                {%- endcapture -%}
+                                {%- endif -%}
+                                {{ block.settings.image1 | image_url: width: 1500 | image_tag: sizes: sizes, widths: widths, fetchpriority: 'high' }}
+                        
+                            {%- endif -%}
+                            {%- if block.settings.title1 != blank and block.settings.title_on_top1 == false -%}
+                                <h2 class="title inline-richtext why_images_on_bottom_text {{ block.settings.heading_size1 }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"> {{ block.settings.title1 }} </h2>
+                            {%- endif -%}
+                        </div>
+                    {%- endif -%}
+                </div>           
+        {% endfor %}
+     
+
+    </div>
+</div>
+</div>
+{% schema %}
+{
+  "name": "Image text grid",
+  "tag": "section",
+  "settings": [
+    {
+        "type": "inline_richtext",
+        "id": "title",
+        "default": "Heading",
+        "label": "Heading"
+      },
+      {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "h2",
+            "label": "t:sections.all.heading_size.options__1.label"
+          },
+          {
+            "value": "h1",
+            "label": "t:sections.all.heading_size.options__2.label"
+          },
+          {
+            "value": "h0",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }
+        ],
+        "default": "h1",
+        "label": "t:sections.all.heading_size.label"
+      },
+    {
+        "type": "color_scheme",
+        "id": "section_color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.animation.content"
+      },
+      {
+        "type": "select",
+        "id": "image_behavior",
+        "options": [
+          {
+            "value": "none",
+            "label": "t:sections.all.animation.image_behavior.options__1.label"
+          },
+          {
+            "value": "ambient",
+            "label": "t:sections.all.animation.image_behavior.options__2.label"
+          },
+          {
+            "value": "zoom-in",
+            "label": "t:sections.all.animation.image_behavior.options__4.label"
+          }
+        ],
+        "default": "none",
+        "label": "t:sections.all.animation.image_behavior.label"
+      },
+    {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+  ],
+  "blocks": [
+    {
+      "type": "image_text",
+      "name": "Image text",
+      "limit": 6,
+      "settings": [
+        {
+            "type": "checkbox",
+            "label": "Title on top",
+            "id": "title_on_top",
+            "default": false
+          },
+        {
+          "type": "text",
+          "label": "Title",
+          "id": "title"
+        },        
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image"
+        },
+        {
+            "type": "checkbox",
+            "label": "Title on top",
+            "id": "title_on_top1",
+            "default": false
+          },
+        {
+          "type": "text",
+          "label": "Title",
+          "id": "title1"
+        },        
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image1"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image text grid"
+    }
+  ]
+}
+{% endschema %}
+
+
+
+{% javascript %}
+{% endjavascript %}

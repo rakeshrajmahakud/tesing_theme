@@ -1,0 +1,526 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_nbHwMW": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_DKj7hy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/x6-store-pc-banner-scaled_1.webp",
+            "preheading": "New",
+            "heading": "Image slide text",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "countdown_end_date": "2024-09-16 23:59",
+            "button_label": "Button label",
+            "link": "#",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_k88JnD": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/store-banner-father-day-pc-scaled_1.webp",
+            "preheading": "New",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "countdown_end_date": "",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_DKj7hy",
+        "slide_k88JnD"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "multicolumn_TKaW7W": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Em6bb3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/shop-jump-image-one_1.gif",
+            "title": "Daily Limited Sale",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_TAgQbW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/store-jump-image-three_1.webp",
+            "title": "Daily Limited Sale",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_GGB39K": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/store-jump-image-two_1.webp",
+            "title": "Daily Limited Sale",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_DUMmEQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/shop-jump-image-one_1.gif",
+            "title": "Daily Limited Sale",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Ry9aM3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/store-jump-image-three_1.webp",
+            "title": "Daily Limited Sale",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Tnm4D7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/store-jump-image-two_1.webp",
+            "title": "Daily Limited Sale",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Em6bb3",
+        "column_TAgQbW",
+        "column_GGB39K",
+        "column_DUMmEQ",
+        "column_Ry9aM3",
+        "column_Tnm4D7"
+      ],
+      "settings": {
+        "footer_usp": false,
+        "full_width": true,
+        "title": "",
+        "heading_size": "h1",
+        "text_center": false,
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "columns_desktop": 6,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "<strong>Aiper Scuba Series</strong>",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "swiper_featured_collection_7nwjWd": {
+      "type": "swiper-featured-collection",
+      "settings": {
+        "title": "<strong>Featured collection</strong>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "image": "shopify://shop_images/store-scuba-banner_1.webp",
+        "image_title": "Aiper Scuba Series",
+        "image_description": "<p>2024 NEW Model</p>",
+        "button_label": "Button label",
+        "button_link": "",
+        "collection": "hydrogen",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "swiper_featured_collection_ne3Cab": {
+      "type": "swiper-featured-collection",
+      "settings": {
+        "title": "<strong>Aiper Seagull Series</strong>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "image": "shopify://shop_images/store-seagull-banner_1.webp",
+        "image_title": "Aiper Scuba Series",
+        "image_description": "<p>2024 NEW Model</p>",
+        "button_label": "Button label",
+        "button_link": "",
+        "collection": "hydrogen",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "swiper_featured_collection_zxtwqp": {
+      "type": "swiper-featured-collection",
+      "settings": {
+        "title": "<strong>Accessories</strong>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "image_title": "Featured collection",
+        "image_description": "",
+        "button_label": "Button label",
+        "button_link": "",
+        "collection": "hydrogen",
+        "products_to_show": 8,
+        "columns_desktop": 3,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "icon_text_grid_KhQekB": {
+      "type": "icon-text-grid",
+      "blocks": {
+        "image_text_UNdM3x": {
+          "type": "image_text",
+          "settings": {
+            "title_on_top": false,
+            "title": "Free Delivery Over $79",
+            "image": "shopify://shop_images/store-why-image-one_1.webp",
+            "title_on_top1": false,
+            "title1": ""
+          }
+        },
+        "image_text_CT6M4r": {
+          "type": "image_text",
+          "settings": {
+            "title_on_top": true,
+            "title": "12+ Months Warranty",
+            "image": "shopify://shop_images/store-why-image-nine_1.webp",
+            "title_on_top1": true,
+            "title1": "Lifetime Customer Support",
+            "image1": "shopify://shop_images/store-why-image-two_1.webp"
+          }
+        },
+        "image_text_VFwBUy": {
+          "type": "image_text",
+          "settings": {
+            "title_on_top": false,
+            "title": "Official Products",
+            "image": "shopify://shop_images/store-why-image-three_1.webp",
+            "title_on_top1": false,
+            "title1": "Money-Back Guarantee",
+            "image1": "shopify://shop_images/store-why-image-four_1.webp"
+          }
+        },
+        "image_text_pRxFYn": {
+          "type": "image_text",
+          "settings": {
+            "title_on_top": true,
+            "title": "Other products",
+            "image": "shopify://shop_images/store-why-image-five_1.webp",
+            "title_on_top1": false,
+            "title1": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_text_UNdM3x",
+        "image_text_CT6M4r",
+        "image_text_VFwBUy",
+        "image_text_pRxFYn"
+      ],
+      "settings": {
+        "title": "<strong>Heading</strong>",
+        "heading_size": "h2",
+        "section_color_scheme": "",
+        "image_behavior": "none",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "50_50_image_k9RfcX": {
+      "type": "50-50-image",
+      "blocks": {
+        "block_CatgCY": {
+          "type": "block",
+          "settings": {
+            "background_color": "",
+            "image": "shopify://shop_images/store-surfer-pilot-image-one_1_ffdfba6e-4b35-456f-958b-c555f73cee55.webp",
+            "title": "Aiper Surfer S1",
+            "content": "Cordless Robotic Pool Skimmer",
+            "cta_text": "Shop Now",
+            "cta_link": "#"
+          }
+        },
+        "block_iWMHfJ": {
+          "type": "block",
+          "settings": {
+            "background_color": "",
+            "image": "shopify://shop_images/store-surfer-pilot-image-two_1.webp",
+            "title": "Aiper Surfer S1",
+            "content": "Cordless Robotic Pool Skimmer",
+            "cta_text": "Shop Now",
+            "cta_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "block_CatgCY",
+        "block_iWMHfJ"
+      ],
+      "settings": {
+        "full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_Pw4ExW": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_NaG6FR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/store-more-image-three.webp",
+            "title": "<strong>Column</strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_FUxDj4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/store-more-image-one.webp",
+            "title": "<strong>Column</strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mpmc78": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/store-more-image-three.webp",
+            "title": "<strong>Column</strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_QGUBmT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/store-more-image-three.webp",
+            "title": "<strong>Column</strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8NpQbr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/store-more-image-two.webp",
+            "title": "<strong>Column</strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_WbkJR9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/store-more-image-one.webp",
+            "title": "<strong>Column</strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Cw4B6R": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/store-more-image-two.webp",
+            "title": "<strong>Column</strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_MgR3tC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/store-more-image-one.webp",
+            "title": "<strong>Column</strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_bgUY6c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/store-more-image-two.webp",
+            "title": "<strong>Column</strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qA3YCx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/store-more-image-one.webp",
+            "title": "<strong>Column</strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_NaG6FR",
+        "column_FUxDj4",
+        "column_mpmc78",
+        "column_QGUBmT",
+        "column_8NpQbr",
+        "column_WbkJR9",
+        "column_Cw4B6R",
+        "column_MgR3tC",
+        "column_bgUY6c",
+        "column_qA3YCx"
+      ],
+      "settings": {
+        "footer_usp": true,
+        "full_width": false,
+        "title": "<strong>Multicolumn</strong>",
+        "heading_size": "h2",
+        "text_center": true,
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "slideshow_nbHwMW",
+    "multicolumn_TKaW7W",
+    "featured_collection",
+    "swiper_featured_collection_7nwjWd",
+    "swiper_featured_collection_ne3Cab",
+    "swiper_featured_collection_zxtwqp",
+    "icon_text_grid_KhQekB",
+    "50_50_image_k9RfcX",
+    "multicolumn_Pw4ExW"
+  ]
+}
