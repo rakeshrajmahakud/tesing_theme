@@ -25,7 +25,7 @@
   assign product_form_id = 'product-form-' | append: section.id
 -%}
 
-{%- for value in option.values -%}
+{%- for value in option.values -%}{% capture check_disabled %}{% render 'bss-ltap-hv-rules-logic', value: value %}{% endcapture -%}
   {%- liquid
     assign option_disabled = true
 
@@ -68,7 +68,7 @@
     </span>
   {%- endcapture -%}
 
-  {%- if picker_type == 'swatch' -%}
+  {%  unless check_disabled contains 'Liquid error' %}{% if check_disabled contains 'true' %}{% assign option_disabled = true %}{% endif %}{% endunless %}{%- if picker_type == 'swatch' -%}
     {% liquid
       assign checked = false
       if option.selected_value == value
